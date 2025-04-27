@@ -106,29 +106,175 @@ a:hover{
     margin-bottom: 20px;
 }
 
-.infos .buttHome{
-    width: 310px;
-    height: 50px;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    justify-content: center;
-    align-items: center;
+.oqueOferecemosSection{
+    width: 100%;
+    height: auto;
     display: flex;
-    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
 
-    & .iconButt{
-        margin-left: 10px;
+.infosOferecemos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 140px;
+}
+
+.linha{
+    width: 25%;
+    height: 6px;
+    background-color: #000000;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.infosOferecemos .tituloSection{
+    font-size: 70px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.infosOferecemos .subtituloSection{
+    font-size: 25px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.infosOferecemos .serviçosDIV{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 120px;
+    gap: 0 20px;
+}
+
+.infosOferecemos .serviços{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.infosOferecemos .circulopreto{
+    width: 90px;
+    height: 90px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .Icon{
+        width: 65px;
+        height: 65px;
     }
 }
 
-.infos .buttHome:hover{
+.infosOferecemos .tituloserviço{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.infosOferecemos .subtituloserviço{
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.diferencialSection {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 60px;
+}
+
+.diferencialInfos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 140px;
+}
+
+.linha {
+    width: 25%;
+    height: 6px;
     background-color: #000000;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.diferencialInfos .tituloSection {
+    font-size: 70px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.diferencialInfos .subtituloSection {
+    font-size: 25px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.quadradosDiferenciaisDIV{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 120px;
+    gap: 0 20px;
+}
+
+.quadradoDiferencial {
+    width: 260px;
+    height: 314px;
+    background-color: #000000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.linhaBranca {
+    width: 70%;
+    height: 6px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.quadradoDiferencial .tituloQuadradoDiferencial {
+    font-weight: bold;
     color: #ffffff;
-    transform: scale(1.05);
+    margin-top: 30px;
+}
+
+.textoQuadradoDiferencial{
+    font-size: 15px;
+    margin-top: 15px;
 }
