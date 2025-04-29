@@ -5,6 +5,7 @@ import Icon1 from "../assets/icons/icon1.png";
 import Icon2 from "../assets/icons/icon2.png";
 import Icon3 from "../assets/icons/icon3.png";
 import Icon4 from "../assets/icons/icon4.png";
+import ImagemProjeto from "../assets/imagens/imagens-projetos/MontViva 1.png";
 import "../pages/App.css";
 import OrcamentoButton from "../components/OrcamentoButton";
 import "../styles/OrcamentoButton.css";
@@ -168,6 +169,129 @@ function App() {
             <p className="textoQuadradoDiferencial">
               Cada projeto é único e feito sob medida
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="ideiasSection">
+        <div className="ideiasInfos">
+          <h1>Ideias ganham vida aqui</h1>
+          <p>
+            Na <span>Unity Company</span>,não apenas desenvolvemos soluções, mas
+            construímos experiências que conectam marcas e pessoas. Do primeiro
+            rascunho ao produto final, cada linha de código, pixel e estratégia
+            é pensada para elevar seu negócio a um novo patamar.
+          </p>
+          <OrcamentoButton customStyle={{ marginTop: "70px" }} />
+        </div>
+      </section>
+
+      <section className="projetosSection">
+        <div className="tituloSection">
+          <div className="linhaBranca"></div>
+          <h1>Alguns dos nossos projetos</h1>
+          <p>Confira o que já construímos para nossos clientes</p>
+        </div>
+
+        <div className="projetosDIV">
+          <div className="tituloProjetoDiv">
+            <h1>Desenvolvimento web</h1>
+            <div className="linhaBranca2"></div>
+            <div className="projetos">
+              <div className="projeto1">
+                <img
+                  className="imgProjeto"
+                  src={ImagemProjeto}
+                  alt="imagem do projeto"
+                />
+                <p className="textCategoria">App mobile</p>
+                <h1>Nome do projeto</h1>
+                <p className="textTecnologias">React Native | Expo | Figma</p>
+              </div>
+
+              <div className="projeto1">
+                <img
+                  className="imgProjeto"
+                  src={ImagemProjeto}
+                  alt="imagem do projeto"
+                />
+                <p className="textCategoria">App mobile</p>
+                <h1>Nome do projeto</h1>
+                <p className="textTecnologias">React Native | Expo | Figma</p>
+              </div>
+
+              <div className="projeto1">
+                <img
+                  className="imgProjeto"
+                  src={ImagemProjeto}
+                  alt="imagem do projeto"
+                />
+                <p className="textCategoria">App mobile</p>
+                <h1>Nome do projeto</h1>
+                <p className="textTecnologias">React Native | Expo | Figma</p>
+              </div>
+
+              <div className="projeto1">
+                <img
+                  className="imgProjeto"
+                  src={ImagemProjeto}
+                  alt="imagem do projeto"
+                />
+                <p className="textCategoria">App mobile</p>
+                <h1>Nome do projeto</h1>
+                <p className="textTecnologias">React Native | Expo | Figma</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="tituloProjetoDiv2">
+            <h1>Desenvolvimento web</h1>
+            <div className="linhaBranca2"></div>
+            <div className="projetos">
+              <div className="projeto1">
+                <img
+                  className="imgProjeto"
+                  src={ImagemProjeto}
+                  alt="imagem do projeto"
+                />
+                <p className="textCategoria">App mobile</p>
+                <h1>Nome do projeto</h1>
+                <p className="textTecnologias">React Native | Expo | Figma</p>
+              </div>
+
+              <div className="projeto1">
+                <img
+                  className="imgProjeto"
+                  src={ImagemProjeto}
+                  alt="imagem do projeto"
+                />
+                <p className="textCategoria">App mobile</p>
+                <h1>Nome do projeto</h1>
+                <p className="textTecnologias">React Native | Expo | Figma</p>
+              </div>
+
+              <div className="projeto1">
+                <img
+                  className="imgProjeto"
+                  src={ImagemProjeto}
+                  alt="imagem do projeto"
+                />
+                <p className="textCategoria">App mobile</p>
+                <h1>Nome do projeto</h1>
+                <p className="textTecnologias">React Native | Expo | Figma</p>
+              </div>
+
+              <div className="projeto1">
+                <img
+                  className="imgProjeto"
+                  src={ImagemProjeto}
+                  alt="imagem do projeto"
+                />
+                <p className="textCategoria">App mobile</p>
+                <h1>Nome do projeto</h1>
+                <p className="textTecnologias">React Native | Expo | Figma</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
