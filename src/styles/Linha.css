@@ -1,0 +1,6 @@
+.linha {
+  width: 35%;
+  height: 6px;
+  background-color: #000000;
+  border-radius: 30px;
+}
