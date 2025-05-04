@@ -695,3 +695,981 @@ footer {
     margin-bottom: 20px;
   }
 }
+
+/* ============ RESPONSIVE STYLES ============ */
+
+/* Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Responsivo */
+@media (max-width: 1024px) {
+  .header {
+    height: auto;
+    padding: 15px 20px;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-bottom: 15px;
+    text-align: center;
+
+    img {
+      width: 120px;
+    }
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  ul {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .ButtHeader {
+    margin-bottom: 15px;
+  }
+
+  .Home {
+    background-position: center;
+    background-image: url(../assets/banners/responsivo/bannerTopoR.png);
+    background-size: cover;
+  }
+
+  .infos h1 {
+    font-size: 50px;
+  }
+
+  .infos p {
+    font-size: 18px;
+  }
+}
+
+/* Hero Section Responsiva */
+@media (max-width: 768px) {
+  .Home {
+    height: auto;
+    padding: 80px 20px;
+    background-position: center;
+  }
+
+  .infos {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+/* Seção O que Oferecemos */
+@media (max-width: 1024px) {
+  .infosOferecemos {
+    margin-top: 80px;
+
+    .tituloSection {
+      font-size: 40px;
+    }
+
+    .subtituloSection {
+      font-size: 18px;
+    }
+
+    .serviçosDIV {
+      flex-direction: column;
+      margin-top: 60px;
+      gap: 40px;
+    }
+  }
+}
+
+/* Seção Diferenciais */
+@media (max-width: 768px) {
+  .diferencialSection {
+    padding: 0 20px;
+  }
+
+  .diferencialInfos {
+    margin-top: 80px;
+
+    .tituloSection {
+      font-size: 40px;
+    }
+
+    .subtituloSection {
+      font-size: 18px;
+    }
+  }
+
+  .quadradosDiferenciaisDIV {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+  }
+
+  .quadradoDiferencial {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Seção Ideias */
+@media (max-width: 1024px) {
+  .ideiasSection {
+    height: auto;
+    padding: 80px 20px;
+    margin-top: 80px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .ideiasInfos {
+    width: 80%;
+    margin-left: 0;
+    margin-left: -130px;
+
+    h1 {
+      font-size: 36px;
+      width: 50%;
+    }
+
+    p {
+      font-size: 16px;
+      width: 55%;
+    }
+  }
+}
+
+/* Seção Projetos */
+@media (max-width: 1024px) {
+  .projetosSection {
+    height: auto;
+    padding: 60px 20px;
+    height: 300vh;
+
+    .tituloSection {
+      margin-top: 60px;
+
+      .linhaBranca {
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+      }
+
+      h1 {
+        font-size: 46px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .projetosDIV {
+      .projetos {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      & .projetos {
+        margin-top: -80px;
+      }
+
+      & .projeto1 {
+        margin-top: 190px;
+      }
+
+      .tituloProjetoDiv2 {
+        & #projetos2 {
+          margin-top: -80px;
+        }
+
+        & #projetos2 h1 {
+          margin-top: 6px;
+        }
+
+        & #Infoprojetos2 {
+          margin-top: 140px;
+        }
+      }
+
+      .tituloProjetoDiv2 h1 {
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+/* Seção Mais Que */
+@media (max-width: 1024px) {
+  .maisqueSection {
+    flex-direction: column;
+    padding: 60px 20px;
+
+    .maisqueInfos {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 40px;
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        font-size: 46px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    .maisqueImagem img {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+}
+
+/* Seção Clientes */
+@media (max-width: 768px) {
+  .clienteSection {
+    .clienteTitulo {
+      margin-top: 80px;
+
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .divQuadrados {
+      flex-direction: column;
+      padding: 0 20px;
+      gap: 30px;
+      margin-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .clienteSection {
+    .clienteTitulo {
+      margin-top: 80px;
+
+      h1 {
+        font-size: 56px;
+        width: 80%;
+      }
+
+      p {
+        font-size: 28px;
+      }
+    }
+
+    .divQuadrados {
+      flex-direction: column;
+      padding: 0 20px;
+      gap: 30px;
+      margin-top: 60px;
+    }
+  }
+}
+
+/* Seção Pronto */
+@media (max-width: 1024px) {
+  .prontoSection {
+    height: auto;
+    padding: 80px 20px;
+    margin-top: 80px;
+
+    .prontoInfos {
+      width: 100%;
+      margin-right: 0;
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+/* Footer Responsivo */
+@media (max-width: 768px) {
+  footer {
+    .infos {
+      flex-direction: column;
+      width: 100%;
+      padding: 0 20px;
+
+      .infosEsq {
+        width: 100%;
+
+        img {
+          width: 100%;
+          max-width: 200px; /* Reduced logo size */
+        }
+      }
+
+      .infosDir {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 20px; /* Adjusted spacing for better alignment */
+        text-align: center; /* Center-aligned texts and links */
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    .infos {
+      flex-direction: column;
+      width: 100%;
+      padding: 0 20px;
+
+      .infosEsq {
+        width: 100%;
+
+        img {
+          width: 100%;
+          max-width: 200px; /* Reduced logo size */
+        }
+      }
+
+      .infosDir {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 20px; /* Adjusted spacing for better alignment */
+        text-align: center; /* Center-aligned texts and links */
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: 15px 30px;
+  }
+
+  .infos {
+    width: 70%;
+  }
+
+  .serviçosDIV {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .serviços {
+    width: 45%;
+    margin-bottom: 40px;
+  }
+
+  .quadradosDiferenciaisDIV {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .quadradoDiferencial {
+    width: 45%;
+  }
+
+  .divQuadrados {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .quadrado {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Ajustes finos para telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 15px;
+    height: auto;
+  }
+
+  .logo {
+    margin: 0 auto 10px;
+    text-align: center;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .ButtHeader {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .Home {
+    height: auto;
+    padding: 60px 10px;
+    background-image: url(../assets/banners/responsivo/bannerTopoR2.png);
+    background-position: 50px;
+    background-size: cover;
+  }
+
+  .infos {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .infosOferecemos {
+    padding: 0 10px;
+    margin-top: 40px;
+
+    .tituloSection {
+      font-size: 32px;
+    }
+
+    .subtituloSection {
+      font-size: 16px;
+    }
+
+    .serviçosDIV {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .diferencialInfos {
+    margin-top: 40px;
+
+    .tituloSection {
+      font-size: 32px;
+    }
+
+    .subtituloSection {
+      font-size: 16px;
+    }
+  }
+
+  .quadradosDiferenciaisDIV {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .quadradoDiferencial {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .circulopreto {
+    width: 60px;
+    height: 60px;
+
+    .Icon {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .ideiasSection {
+    padding: 40px;
+    margin-top: 40px;
+    background-position: -14em;
+
+    .ideiasInfos {
+      width: 100%;
+      text-align: left;
+      margin-left: -50px;
+
+      h1 {
+        width: 80%;
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 14px;
+        width: 80%;
+      }
+    }
+  }
+
+  .projetosSection {
+    height: 370vh;
+  }
+
+  .maisqueSection {
+    .maisqueInfos {
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+    }
+
+    .maisqueImagem img {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
+  .clienteSection {
+    .clienteTitulo {
+      margin-top: 40px;
+
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .divQuadrados {
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 10px;
+    }
+  }
+
+  footer {
+    padding: 0 15px;
+
+    & .textFinal {
+      font-size: 15px;
+    }
+    .infos {
+      flex-direction: column;
+      padding: 0 10px;
+
+      .infosEsq {
+        img {
+          max-width: 150px;
+        }
+      }
+
+      .infosDir {
+        margin-top: 20px;
+        text-align: center;
+        gap: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .ideiasSection {
+    padding: 40px;
+    margin-top: 40px;
+    background-position: -18em;
+
+    .ideiasInfos {
+      width: 100%;
+      text-align: left;
+      margin-left: -50px;
+
+      h1 {
+        width: 80%;
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 14px;
+        width: 80%;
+      }
+    }
+  }
+
+  .projetosSection {
+    height: 390vh;
+  }
+
+  .maisqueSection {
+    .maisqueInfos {
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+    }
+
+    .maisqueImagem img {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
+  .clienteSection {
+    .clienteTitulo {
+      margin-top: 40px;
+
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .divQuadrados {
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 10px;
+    }
+  }
+
+  footer {
+    padding: 0 10px;
+
+    & .textFinal {
+      font-size: 15px;
+    }
+
+    .infos {
+      flex-direction: column;
+      padding: 0 10px;
+
+      .infosEsq {
+        img {
+          max-width: 150px;
+        }
+      }
+
+      .infosDir {
+        margin-top: 20px;
+        text-align: center;
+        gap: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 393px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 10px;
+    height: auto;
+  }
+
+  .logo {
+    margin: 0 auto 10px;
+    text-align: center;
+
+    img {
+      width: 90px;
+    }
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .ButtHeader {
+    width: 100%;
+    max-width: 180px;
+    margin-bottom: 10px;
+  }
+
+  .Home {
+    height: auto;
+    padding: 50px 10px;
+    background-image: url(../assets/banners/responsivo/bannerTopoR2.png);
+    background-position: 50px;
+    background-size: cover;
+  }
+
+  .infos {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .infosOferecemos {
+    padding: 0 10px;
+    margin-top: 30px;
+
+    .tituloSection {
+      font-size: 30px;
+    }
+
+    .subtituloSection {
+      font-size: 14px;
+    }
+
+    .serviçosDIV {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  .diferencialInfos {
+    margin-top: 30px;
+
+    .tituloSection {
+      font-size: 30px;
+    }
+
+    .subtituloSection {
+      font-size: 14px;
+    }
+  }
+
+  .quadradosDiferenciaisDIV {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .quadradoDiferencial {
+    width: 100%;
+    max-width: 230px;
+  }
+
+  .circulopreto {
+    width: 50px;
+    height: 50px;
+
+    .Icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .ideiasSection {
+    padding: 30px;
+    margin-top: 30px;
+    background-position: -20em;
+
+    .ideiasInfos {
+      width: 100%;
+      text-align: left;
+      margin-left: -40px;
+
+      h1 {
+        width: 80%;
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 12px;
+        width: 80%;
+      }
+    }
+  }
+
+  .projetosSection {
+    height: 470vh;
+
+    .tituloSection h1 {
+      font-size: 35px;
+    }
+
+    .tituloProjetoDiv h1 {
+      font-size: 25px;
+    }
+    .tituloProjetoDiv2 h1 {
+      font-size: 25px;
+    }
+  }
+
+  .maisqueSection {
+    .maisqueInfos {
+      h1 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .maisqueImagem img {
+      width: 100%;
+      max-width: 480px;
+    }
+  }
+
+  .clienteSection {
+    .clienteTitulo {
+      margin-top: 30px;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .divQuadrados {
+      flex-direction: column;
+      gap: 15px;
+      padding: 0 10px;
+    }
+  }
+
+  .prontoSection {
+    & .prontoInfos h1 {
+      font-size: 29.9px;
+    }
+  }
+  footer {
+    padding: 0 20px;
+
+    & .textFinal {
+      font-size: 13.3px;
+    }
+
+    .infos {
+      flex-direction: column;
+      padding: 0 10px;
+
+      .infosEsq {
+        img {
+          max-width: 140px;
+        }
+      }
+
+      .infosDir {
+        margin-top: 15px;
+        text-align: left;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 720px) {
+  .projetosSection {
+    height: 240vh;
+  }
+
+  .Home .infos h1 {
+    font-size: 50px;
+  }
+
+  .Home .infos p {
+    font-size: 22px;
+  }
+
+  .ideiasSection .ideiasInfos h1 {
+    font-size: 45px;
+  }
+
+  .ideiasSection .ideiasInfos p {
+    font-size: 18px;
+  }
+
+  .oqueOferecemosSection {
+    padding: 0 20px;
+  }
+
+  .ideiasInfos {
+    margin-left: -40em;
+  }
+
+  .textCategoria {
+    font-size: 17px;
+  }
+
+  .prontoInfos {
+    margin-left: -230px;
+  }
+
+  .infosEsq {
+    margin-left: -90px;
+  }
+
+  .infosDir {
+    & .info1 {
+      margin-left: -50px;
+    }
+
+    & #info2 {
+      margin-left: 5px;
+    }
+    & .info3 {
+      margin-left: 5px;
+    }
+  }
+}

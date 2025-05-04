@@ -341,8 +341,8 @@ function App() {
                 backgroundColor: "#fff",
               }}
             />
-            <div className="projetos">
-              <div className="projeto1">
+            <div className="projetos" id="projetos2">
+              <div className="projeto1" id="Infoprojetos2">
                 <img
                   className="imgProjeto"
                   src={ImagemProjeto}
@@ -451,7 +451,7 @@ function App() {
       <section className="prontoSection">
         <div className="prontoInfos">
           <Linha />
-          <h1>
+          <h1 className="prontoTitulo">
             Pronto para elevar seu<br></br> negócio?
           </h1>
           <p>Entre em contato e vamos criar algo incrível juntos!</p>
@@ -494,7 +494,7 @@ function App() {
               </ul>
             </div>
 
-            <div className="info1">
+            <div className="info1" id="info2">
               <h1>Serviços</h1>
               <Linha
                 customStyle={{
