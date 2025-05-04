@@ -210,7 +210,11 @@ function App() {
           </div>
 
           <div className="quadradoDiferencial">
-            <img className="IconDiferencial" src={Icon2} alt="" />
+            <img
+              className="IconDiferencial"
+              src={Icon2}
+              alt="IconeDiferenciais"
+            />
             <h1 className="tituloQuadradoDiferencial">Transparência</h1>
             <Linha
               customStyle={{
@@ -226,7 +230,11 @@ function App() {
           </div>
 
           <div className="quadradoDiferencial">
-            <img className="IconDiferencial" src={Icon3} alt="" />
+            <img
+              className="IconDiferencial"
+              src={Icon3}
+              alt="IconeDiferenciais"
+            />
             <h1 className="tituloQuadradoDiferencial">Equipe versátil</h1>
             <Linha
               customStyle={{
@@ -242,7 +250,11 @@ function App() {
           </div>
 
           <div className="quadradoDiferencial">
-            <img className="IconDiferencial" src={Icon4} alt="" />
+            <img
+              className="IconDiferencial"
+              src={Icon4}
+              alt="IconeDiferenciais"
+            />
             <h1 className="tituloQuadradoDiferencial">Suporte Contínuo</h1>
             <Linha
               customStyle={{
