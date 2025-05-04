@@ -19,8 +19,18 @@ import IconeOqueOferec4 from "../assets/icons/oqueOferecemos/vector-pen 1.png";
 import IconeOqueOferec5 from "../assets/icons/oqueOferecemos/reb.png";
 import IconeOqueOferec6 from "../assets/icons/oqueOferecemos/social.png";
 import Linha from "../components/Linha";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,
+    });
+  });
   return (
     <>
       <header className="header">
@@ -39,15 +49,15 @@ function App() {
               <a href="#portfolio">Portfólio</a>
             </li>
             <li>
-              <a href="#sobre">Sobre nós</a>
+              <a href="#feedbacks">Feedbacks</a>
             </li>
           </ul>
           <button className="ButtHeader">Entre em contato</button>
         </nav>
       </header>
 
-      <section className="Home">
-        <div className="infos">
+      <section className="Home" id="home">
+        <div className="infos" data-aos="fade-up">
           <h1>
             Transforme ideias<br></br>em realidade digital
           </h1>
@@ -59,8 +69,8 @@ function App() {
         </div>
       </section>
 
-      <section className="oqueOferecemosSection">
-        <div className="infosOferecemos">
+      <section className="oqueOferecemosSection" id="servicos">
+        <div className="infosOferecemos" data-aos="fade-up">
           <Linha
             customStyle={{
               width: "20%",
@@ -71,7 +81,7 @@ function App() {
             Desenvolvimento e estratégias sob medida para o seu sucesso
           </p>
 
-          <div className="serviçosDIV">
+          <div className="serviçosDIV" data-aos="fade-right">
             <div className="serviços">
               <div className="circulopreto">
                 <img
@@ -168,7 +178,7 @@ function App() {
       </section>
 
       <section className="diferencialSection">
-        <div className="diferencialInfos">
+        <div className="diferencialInfos" data-aos="fade-up">
           <Linha
             customStyle={{
               width: "20%",
@@ -180,7 +190,7 @@ function App() {
           </p>
         </div>
 
-        <div className="quadradosDiferenciaisDIV">
+        <div className="quadradosDiferenciaisDIV" data-aos="fade-right">
           <div className="quadradoDiferencial">
             <img className="IconDiferencial" src={Icon1} alt="" />
             <h1 className="tituloQuadradoDiferencial">
@@ -250,7 +260,7 @@ function App() {
       </section>
 
       <section className="ideiasSection">
-        <div className="ideiasInfos">
+        <div className="ideiasInfos" data-aos="fade-right">
           <h1>Ideias ganham vida aqui</h1>
           <p>
             Na <span>Unity Company</span>,não apenas desenvolvemos soluções, mas
@@ -262,8 +272,8 @@ function App() {
         </div>
       </section>
 
-      <section className="projetosSection">
-        <div className="tituloSection">
+      <section className="projetosSection" id="portfolio">
+        <div className="tituloSection" data-aos="fade-up">
           <Linha
             customStyle={{
               backgroundColor: "#fff",
@@ -276,7 +286,7 @@ function App() {
         </div>
 
         <div className="projetosDIV">
-          <div className="tituloProjetoDiv">
+          <div className="tituloProjetoDiv" data-aos="fade-right">
             <h1>Desenvolvimento web</h1>
             <Linha
               customStyle={{
@@ -332,7 +342,7 @@ function App() {
             </div>
           </div>
 
-          <div className="tituloProjetoDiv2">
+          <div className="tituloProjetoDiv2" data-aos="fade-left">
             <h1>Desenvolvimento web</h1>
             <Linha
               customStyle={{
@@ -391,7 +401,7 @@ function App() {
       </section>
 
       <section className="maisqueSection">
-        <div className="maisqueInfos">
+        <div className="maisqueInfos" data-aos="fade-right">
           <div className="maisqueTitulo">
             <Linha customStyle={{ marginBottom: "30px" }} />
             <h1 className="maisqueTituloText">
@@ -409,20 +419,20 @@ function App() {
           </p>
           <OrcamentoButton customStyle={{ marginTop: "70px" }} />
         </div>
-        <div className="maisqueImagem">
+        <div className="maisqueImagem" data-aos="fade-left">
           <img src={ImagemMaisQue} alt="Imagem Mais que" />
         </div>
       </section>
 
-      <section className="clienteSection">
-        <div className="clienteTitulo">
+      <section className="clienteSection" id="feedbacks">
+        <div className="clienteTitulo" data-aos="fade-up">
           <Linha customStyle={{ width: "20%" }} />
           <h1>O que nossos clientes dizem</h1>
           <p>Confiança e resultados comprovados</p>
         </div>
 
         <div className="divQuadrados">
-          <div className="quadrado">
+          <div className="quadrado" data-aos="fade-left">
             <div className="fotoCliente">
               <img src={ClienteImg1} alt="" />
             </div>
@@ -430,7 +440,7 @@ function App() {
             <p>“A Unity revolucionou nossa presença online. Recomendo”</p>
           </div>
 
-          <div className="quadrado">
+          <div className="quadrado" data-aos="fade-down">
             <div className="fotoCliente">
               <img src={ClienteImg2} alt="" />
             </div>
@@ -438,7 +448,7 @@ function App() {
             <p>“O app que desenvolveram superou nossas expectativas”</p>
           </div>
 
-          <div className="quadrado">
+          <div className="quadrado" data-aos="fade-right">
             <div className="fotoCliente">
               <img src={ClienteImg3} alt="" />
             </div>
@@ -449,7 +459,7 @@ function App() {
       </section>
 
       <section className="prontoSection">
-        <div className="prontoInfos">
+        <div className="prontoInfos" data-aos="fade-left">
           <Linha />
           <h1 className="prontoTitulo">
             Pronto para elevar seu<br></br> negócio?
@@ -461,11 +471,11 @@ function App() {
 
       <footer>
         <div className="infos">
-          <div className="infosEsq">
+          <div className="infosEsq" data-aos="fade-left">
             <img src={logoBranca} alt="logo-footer" />
           </div>
 
-          <div className="infosDir">
+          <div className="infosDir" data-aos="fade-down">
             <div className="info1">
               <h1>Links rápidos</h1>
               <Linha
@@ -480,16 +490,13 @@ function App() {
                   <a href="#home">Home</a>
                 </li>
                 <li>
-                  <a href="#home">Serviços</a>
+                  <a href="#servicos">Serviços</a>
                 </li>
                 <li>
-                  <a href="#home">Portfólio</a>
+                  <a href="#portfolio">Portfólio</a>
                 </li>
                 <li>
-                  <a href="#home">Sobre nós</a>
-                </li>
-                <li>
-                  <a href="#home">Contato</a>
+                  <a href="#feedbacks">Feedbacks</a>
                 </li>
               </ul>
             </div>
@@ -539,6 +546,7 @@ function App() {
           © 2025 Unity Company | Todos os direitos reservados.
         </p>
       </footer>
+      <WhatsAppButton />
     </>
   );
 }

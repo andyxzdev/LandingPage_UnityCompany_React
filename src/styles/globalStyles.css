@@ -1,18 +1,19 @@
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  scroll-behavior: smooth;
 }
