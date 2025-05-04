@@ -286,13 +286,7 @@ function App() {
 
       <section className="projetosSection" id="portfolio">
         <div className="tituloSection" data-aos="fade-up">
-          <Linha
-            customStyle={{
-              backgroundColor: "#fff",
-              marginLeft: "600px",
-              width: "20%",
-            }}
-          />
+          <div className="linha2"></div>
           <h1>Alguns dos nossos projetos</h1>
           <p>Confira o que já construímos para nossos clientes</p>
         </div>
@@ -415,7 +409,7 @@ function App() {
       <section className="maisqueSection">
         <div className="maisqueInfos" data-aos="fade-right">
           <div className="maisqueTitulo">
-            <Linha customStyle={{ marginBottom: "30px" }} />
+            <div className="linha3"></div>
             <h1 className="maisqueTituloText">
               Mais que uma empresa,<br></br>uma parceira!
             </h1>
